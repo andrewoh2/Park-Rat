@@ -2,7 +2,6 @@
 author: Andrew Scida
 date:10/17/2023
 */
-/*place holder background image*/
 
 * {
     margin: 0;
@@ -16,17 +15,36 @@ html {
     background-size: cover;
     height: 100%;
 }
+
 a {
     color: white;
     text-decoration: none;
+    font-family: playfair display;
 }
+
+.newsong {
+  text-emphasis: bold;
+}
+
  #navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   font-size: larger;
-  outline: thin rgb(213, 84, 19) solid;
+  outline: 4px rgb(213, 84, 19) solid;
+  margin: 4px;
+}
+
+#button {
+  height: 35px;
+  width: 70px;
+  border-radius: 30px;
+}
+/*navigation current page color (not functional)*/
+nav a.current-page {
+  background: black;
+  color: rgb(213, 84, 19) ;
 }
 
 #about, #socials, #logo, #booking, #music {
@@ -68,7 +86,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 50px;
+    
 }
+
+/* booking page */
 
 .form {
     justify-content: center;
@@ -83,8 +105,17 @@ a {
     padding: 10px;
 }
 
+#submit {
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 20px;;
+}
+
 #formname, #formemail{
     margin-bottom: 30px;
+    align-items: auto;
+
 }
 
 #submit {
@@ -100,4 +131,25 @@ a {
     margin: auto;
     margin-top: 100px;
     height: 570px;
+}
+
+
+
+/* about page */
+#about-image {
+  height: 300px;
+  outline: medium gray solid;
+  margin-top: 200px;
+  margin-left: 100px;
+
+  
+}
+
+#about-text {
+  background-color: rgb(213, 84, 19);
+  margin-left: 600px;
+  margin-top: -200px;
+  width: 500px;
+  flex-wrap: wrap;
+  
 }
