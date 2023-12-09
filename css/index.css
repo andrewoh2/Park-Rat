@@ -32,19 +32,14 @@ a {
   align-items: center;
   background-color: black;
   font-size: larger;
-  outline: 4px rgb(213, 84, 19) solid;
-  margin: 4px;
-}
-
+  outline: 2px rgb(213, 84, 19) solid;
+  margin: 2px;
+ }
 #button {
   height: 35px;
   width: 70px;
   border-radius: 30px;
-}
-/*navigation current page color (not functional)*/
-nav a.current-page {
-  background: black;
-  color: rgb(213, 84, 19) ;
+  outline: 1px white solid;
 }
 
 #about, #socials, #logo, #booking, #music {
@@ -68,26 +63,28 @@ nav a.current-page {
    flex: 2;
 }
 #youtube {
-    outline: thick rgb(213, 84, 19) solid;
+    outline: 2px rgb(213, 84, 19) solid;
     margin-left: 10%;
-    width: 560px;
-    height: 315px;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
 }
 
  .promo {
-    border: thin solid rgb(255, 255, 255);
-    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: 1px 2px 3px rgb(213, 84, 19);
+    color: white;
     margin-right: 10%;
     text-align: center;
     padding: 0px;
-    width: 560px;
-    height: 315px;
+    width: 400px;
+    height: 250px;
     background-color: rgba(255, 255, 255, 0.606);
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 50px;
-    
+    border-radius: 5px;
 }
 
 /* booking page */
@@ -103,6 +100,7 @@ nav a.current-page {
     margin-left: 200px;
     margin-right: 200px;
     padding: 10px;
+    border-radius: 5px;
 }
 
 #submit {
@@ -138,7 +136,8 @@ nav a.current-page {
 /* about page */
 #about-image {
   height: 300px;
-  outline: medium gray solid;
+  border-radius: 5px;
+  outline: thin rgb(255, 255, 255) solid;
   margin-top: 200px;
   margin-left: 100px;
 
@@ -146,10 +145,44 @@ nav a.current-page {
 }
 
 #about-text {
-  background-color: rgb(213, 84, 19);
+  color: rgb(213, 84, 19);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   margin-left: 600px;
   margin-top: -200px;
   width: 500px;
   flex-wrap: wrap;
-  
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 3px;
+  outline: thin rgb(255, 255, 255) solid;
 }
+
+#clickHere {
+  text-decoration: underline;
+}
+
+/* socials page */
+
+#followUs {
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(213, 84, 19);
+}
+
+/*flex container*/
+.logo {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+vertical-align: center;
+}
+
+ .box {
+  flex-grow: 1;
+  margin: 20px;
+  max-width: 60px;
+  margin-top: 100px;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+  border-radius: 10px;;
+}  
